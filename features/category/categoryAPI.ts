@@ -8,7 +8,7 @@ export const getCategoriesAPI = createAsyncThunk("get Categories", async () => {
   return data;
 });
 
-export const getCategoriessByAPI = createAsyncThunk(
+export const getCategoriessByIdAPI = createAsyncThunk(
   "get Categories by id",
   async (id: number) => {
     const { data } = await myAxios.get("categories/" + id);
